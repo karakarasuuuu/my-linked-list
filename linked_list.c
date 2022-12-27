@@ -44,3 +44,28 @@ bool print_list(List* list){
 
     return true;
 }
+
+/*
+Remove a node in a list.
+
+- list: The list to remove a node.
+- num: The val of the node to be removed.
+*/
+Node* remove_node(List* list, int num){
+    if (list == NULL || num == NULL)
+        return NULL;
+
+    Node* curr = list->head;
+    Node* prev = NULL;
+    while (curr && curr->val != num){
+        prev = curr;
+        curr = curr->next;
+    }
+
+    // num is not found in list
+    if (!curr)
+        return NULL;
+
+    prev->next = curr->next;
+    return curr;
+}

@@ -14,3 +14,4 @@ struct ListNode {
 
 bool insert_node(List*, Node*);
 bool print_list(List*);
+Node* remove_node(List*, int);

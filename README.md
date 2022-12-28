@@ -7,5 +7,4 @@ This is my personal practice on Linked List in 3 languages (C, C++, Python).
 
 ## Furthermore
 - Two directions (`prev` and `next`) and other variations.
-- Functional programming versions
-`insert_node(data_structure, node)` so that increases flexibility.
+- Functional programming versions `insert_node(data_structure, node)` so that increases flexibility.
